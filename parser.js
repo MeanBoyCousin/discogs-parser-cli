@@ -12,8 +12,6 @@ const sanitise = require('./helpers/sanitise')
 const addToDb = require('./helpers/addToDb')
 const complete = require('./helpers/complete')
 
-console.log(path.join(__dirname, process.argv[2]))
-
 argvChecker(process.argv[2], process.argv[3])
 
 const db = dbAccess.open('./rhythm-roulette.db')
@@ -37,7 +35,8 @@ xmlStream.on('tag:master', (master) => {
         }
     }
 
-    if (bar.value.toString() === process.argv[3]) complete(db)
+    if (bar.value.toString() === process.argv[3]) {
+        complete(db)
+        dbAccess.close(db)
+    }
 })
-
-dbAccess.close(db)
