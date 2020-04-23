@@ -1,0 +1,42 @@
+const omit = require('lodash.omit')
+
+const sanitise = master => {
+    master.id = master['$attrs'].id
+
+    master = omit(master, ['$name', 'main_release', 'data_quality', 'images', '$attrs', 'notes'])
+
+    if (Array.isArray(master.artists) && typeof master.artists[0] === 'object') master.artists = master.artists[0].name
+
+    if (Array.isArray(master.artists) && typeof master.artists[0] === 'string') master.artists = master.artists.join(', ')
+
+    if (typeof master.artists === 'object') master.artists = master.artists.name
+
+    if (Array.isArray(master.videos)) {
+        master.videos = master.videos.map(video => {
+            if (video['$attrs'] !== undefined) {
+                return {
+                    src: video['$attrs'].src
+                }
+            }
+        });
+    } else {
+        if (master.videos['$attrs'] !== undefined) master.videos.src = master.videos['$attrs'].src
+        master.videos = omit(master.videos, ['title', 'description', '$attrs'])
+        master.videos = [master.videos]
+    }
+
+    // String formatting replacements.
+    master.artists = master.artists.replace(/'/g, "")
+    if (master.artists.includes(', The')) master.artists = `The ${master.artists.replace(', The', "")}`
+    master.title = master.title.replace(/'/g, "")
+    if (master.genres.includes("Children's") && Array.isArray(master.genres)) {
+        master.genres = master.genres.map(genre => genre.replace("'", ""))
+    }
+    if (master.genres.includes("Children's") && typeof master.genres === 'string') {
+        master.genres = master.genres.replace("'", "")
+    }
+
+    return master
+}
+
+module.exports = sanitise
