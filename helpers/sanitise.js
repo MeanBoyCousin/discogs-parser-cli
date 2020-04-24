@@ -34,7 +34,7 @@ const sanitise = master => {
     if (master.genres.includes("Children's") && typeof master.genres === 'string') {
         master.genres = master.genres.replace(/'/g, "''")
     }
-    if (master.style !== undefined) {
+    if (master.styles !== undefined) {
         if (master.styles.includes("Min'yō") && Array.isArray(master.styles)) {
             master.styles = master.styles.map(style => style.replace(/'/g, "''"))
         }
