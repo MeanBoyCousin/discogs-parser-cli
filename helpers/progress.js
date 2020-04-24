@@ -13,7 +13,7 @@ const startProgressBar = lines => {
 
     const bar = new cliProgress.SingleBar({
         format: `[{bar}] ${_colors.yellow('{percentage}%')} | Completed: ${_colors.yellow('{value}/{total}')} | Elapsed: ${_colors.yellow('{duration_formatted}')} | Remaining: ${_colors.yellow('{eta_formatted}')} | Current release ID: ${_colors.yellow('{id}')}`,
-        etaBuffer: 100,
+        etaBuffer: 10000,
         fps: 60,
         stopOnComplete: true
     }, cliProgress.Presets.shades_classic);

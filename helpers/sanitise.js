@@ -26,15 +26,23 @@ const sanitise = master => {
     }
 
     // String formatting replacements.
-    master.artists = master.artists.replace(/'/g, "")
+    master.artists = master.artists.replace(/'/g, "''")
     if (master.artists.includes(', The')) master.artists = `The ${master.artists.replace(', The', "")}`
-    master.title = master.title.replace(/'/g, "")
     if (master.genres.includes("Children's") && Array.isArray(master.genres)) {
-        master.genres = master.genres.map(genre => genre.replace("'", ""))
+        master.genres = master.genres.map(genre => genre.replace(/'/g, "''"))
     }
     if (master.genres.includes("Children's") && typeof master.genres === 'string') {
-        master.genres = master.genres.replace("'", "")
+        master.genres = master.genres.replace(/'/g, "''")
     }
+    if (master.style !== undefined) {
+        if (master.styles.includes("Min'yō") && Array.isArray(master.styles)) {
+            master.styles = master.styles.map(style => style.replace(/'/g, "''"))
+        }
+        if (master.styles.includes("Min'yō") && typeof master.styles === 'string') {
+            master.styles = master.styles.replace(/'/g, "''")
+        }
+    }
+    master.title = master.title.replace(/'/g, "''")
 
     return master
 }
