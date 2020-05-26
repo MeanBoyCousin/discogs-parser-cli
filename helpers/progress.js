@@ -36,7 +36,7 @@ const startProgressBar = lines => {
 
 const updateAndIncrement = (bar, master) => {
     bar.update({
-        id: master['$attrs'].id, // Included for fault finding troublesome releases.
+        id: master.id, // Included for fault finding troublesome releases.
     });
 
     bar.increment(); // Increment bar for each release.

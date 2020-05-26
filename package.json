@@ -4,7 +4,8 @@
     "description": "",
     "main": "parser.js",
     "scripts": {
-        "lint": "npx eslint *.js --fix"
+        "lint": "npx eslint *.js --fix",
+        "start": "node parser"
     },
     "keywords": [],
     "author": "",
@@ -12,7 +13,10 @@
     "dependencies": {
         "boxen": "^4.2.0",
         "cli-progress": "^3.8.0",
+        "inquirer": "^7.1.0",
         "lodash.omit": "^4.5.0",
+        "node-fetch": "^2.6.0",
+        "sqlite": "^4.0.9",
         "sqlite3": "^4.1.1",
         "xml-flow": "^1.0.4"
     },

@@ -1,12 +1,10 @@
 const boxen = require('boxen');
 const path = require('path');
 
-const complete = db => {
-    const sql = 'SELECT count(*) FROM releases;';
-
-    db.all(sql, (err, rows) => {
+const complete = async db => {
+    await db.get('SELECT count(*) FROM releases;').then(data => {
         console.log(
-            boxen(`Parsing complete - ${rows[0]['count(*)']} releases added to the database.`, {
+            boxen(`Parsing complete - ${data['count(*)']} releases added to the database.`, {
                 borderColor: 'green',
                 borderStyle: 'round',
                 dimBorder: true,

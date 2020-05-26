@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const addToDb = (db, master) => {
-    db.run(
+const addToDb = async (db, master) => {
+    await db.run(
         `INSERT INTO releases (artists, genres, styles, year, title, videos, id)
     VALUES ('${master.artists}', 
             '${master.genres}', 
