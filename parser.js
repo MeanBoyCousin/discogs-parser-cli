@@ -2,14 +2,15 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 const flow = require('xml-flow');
-const dbAccess = require('./helpers/databaseAccess');
-const clearAndClean = require('./helpers/dbClearClean');
-const clearErrorCatcher = require('./helpers/clearErrorCatcher');
-const progress = require('./helpers/progress');
+
+const dbAccess = require('./helpers/db/databaseAccess');
+const clearAndClean = require('./helpers/db/dbClearClean');
+const clearErrorCatcher = require('./helpers/util/clearErrorCatcher');
+const progress = require('./helpers/console/progress');
 const sanitise = require('./helpers/sanitise');
 const videoStatusCheck = require('./helpers/videoStatusChecker');
-const addToDb = require('./helpers/addToDb');
-const complete = require('./helpers/complete');
+const addToDb = require('./helpers/db/addToDb');
+const complete = require('./helpers/console/complete');
 
 inquirer
     .prompt([
