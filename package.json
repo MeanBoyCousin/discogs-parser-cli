@@ -12,12 +12,12 @@
     "license": "ISC",
     "dependencies": {
         "boxen": "^4.2.0",
-        "cli-progress": "^3.8.0",
+        "cli-progress": "^3.8.2",
         "inquirer": "^7.1.0",
         "lodash.omit": "^4.5.0",
         "node-fetch": "^2.6.0",
         "sqlite": "^4.0.9",
-        "sqlite3": "^4.1.1",
+        "sqlite3": "^4.2.0",
         "xml-flow": "^1.0.4"
     },
     "devDependencies": {

@@ -38,16 +38,16 @@ inquirer
         },
     ])
     .then(async answers => {
-        const xmlInputFile = fs.createReadStream(path.join(__dirname, `./${answers.fileName}`));
-        const xmlStream = flow(xmlInputFile);
-
         const db = await dbAccess.open('./rhythm-roulette.db');
 
-        if (answers.action === 'overwrite') clearAndClean(db); // Only runs on overwrite parse.
+        if (answers.action === 'overwrite') await clearAndClean(db); // Only runs on overwrite parse.
 
         clearErrorCatcher('./errorCatcher.xml');
 
         const bar = progress.start(answers.lines); // Init progress bar with amount of releases to parse from the CLI.
+
+        const xmlInputFile = fs.createReadStream(path.join(__dirname, `./${answers.fileName}`));
+        const xmlStream = flow(xmlInputFile);
 
         xmlStream.on('tag:master', async master => {
             if (master.videos !== undefined && master.year > 0 && master.$attrs.id > answers.start) {
