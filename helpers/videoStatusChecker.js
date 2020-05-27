@@ -6,18 +6,18 @@ const check = async id => {
 };
 
 const checkVideoStatus = async release => {
-    release.videos = await release.videos.reduce(async (accPromise, curr) => {
-        return await Promise.all([accPromise, check(curr.src.slice(32))]).then(values => {
-            const acc = values[0];
-            const checkResult = values[1];
-            if (checkResult === 200) {
-                acc.push(curr);
-                return acc;
+    release.videos = await Promise.all(
+        release.videos.map(async video => {
+            const status = await check(video.src.slice(32));
+            if (status === 200) {
+                return video;
             } else {
-                return acc;
+                return {};
             }
-        });
-    }, []);
+        })
+    ).then(videos => {
+        return videos.filter(video => video.src !== undefined);
+    });
 
     return release;
 };
