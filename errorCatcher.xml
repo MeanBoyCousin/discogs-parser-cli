@@ -1,2 +1,145 @@
 IDs of releases that threw an error.
 
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
+[object Object] - TypeError: Cannot read property 'src' of undefined
+    at C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:11:46
+    at Array.map (<anonymous>)
+    at checkVideoStatus (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\helpers\videoStatusChecker.js:10:24)
+    at EventEmitter.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\parser.js:57:36)
+    at EventEmitter.emit (events.js:311:20)
+    at SAXStream.<anonymous> (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\xml-flow\lib\xml-flow.js:142:15)
+    at SAXStream.emit (events.js:311:20)
+    at SAXParser.me._parser.<computed> [as onclosetag] (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:258:17)
+    at emit (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\TimmyD\Documents\VSC\discogs-parser-cli\node_modules\sax\lib\sax.js:629:5)
