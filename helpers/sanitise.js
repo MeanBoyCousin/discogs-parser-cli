@@ -33,7 +33,7 @@ const sanitise = master => {
     removeNulls(master.videos)
 
     // String formatting replacements.
-    master.artists = master.artists.replace(/'/g, "''")
+    master.artists = master.artists.replace(/(\s\(\d+\))$/, '').replace(/'/g, "''")
     if (master.artists.includes(', The')) master.artists = `The ${master.artists.replace(', The', '')}`
     if (master.genres.includes("Children's") && Array.isArray(master.genres)) {
         master.genres = master.genres.map(genre => genre.replace(/'/g, "''"))
