@@ -20,7 +20,7 @@ const sanitise = master => {
         master.videos = master.videos.map(video => {
             if (video['$attrs'] !== undefined) {
                 return {
-                    src: video['$attrs'].src,
+                    src: video['$attrs'].src
                 }
             }
         })

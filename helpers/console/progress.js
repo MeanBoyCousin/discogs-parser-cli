@@ -1,6 +1,6 @@
-const boxen = require('boxen');
-const cliProgress = require('cli-progress');
-const _colors = require('colors');
+const boxen = require('boxen')
+const cliProgress = require('cli-progress')
+const _colors = require('colors')
 
 const startProgressBar = lines => {
     console.log(
@@ -9,9 +9,9 @@ const startProgressBar = lines => {
             borderStyle: 'round',
             dimBorder: true,
             padding: 1,
-            margin: 1,
+            margin: 1
         })
-    );
+    )
 
     const bar = new cliProgress.SingleBar(
         {
@@ -22,27 +22,29 @@ const startProgressBar = lines => {
             )} | Current release ID: ${_colors.yellow('{id}')}`,
             etaBuffer: 10000,
             fps: 60,
-            stopOnComplete: true,
+            stopOnComplete: true
         },
         cliProgress.Presets.shades_classic
-    );
+    )
 
     bar.start(lines, 0, {
-        id: 0,
-    });
+        id: 0
+    })
 
-    return bar;
-};
+    return bar
+}
 
 const updateAndIncrement = (bar, master) => {
-    bar.update({
-        id: master.id, // Included for fault finding troublesome releases.
-    });
+    const currentID = master.id === undefined ? master['$attrs'].id : master.id
 
-    bar.increment(); // Increment bar for each release.
-};
+    bar.update({
+        id: currentID // Included for fault finding troublesome releases.
+    })
+
+    bar.increment() // Increment bar for each release.
+}
 
 module.exports = {
     start: startProgressBar,
-    update: updateAndIncrement,
-};
+    update: updateAndIncrement
+}

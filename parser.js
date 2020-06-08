@@ -10,6 +10,7 @@ const progress = require('./helpers/console/progress')
 const sanitise = require('./helpers/sanitise')
 const videoStatusCheck = require('./helpers/videoStatusChecker')
 const addToDb = require('./helpers/db/addToDb')
+const updateStats = require('./helpers/db/updateStats')
 const complete = require('./helpers/console/complete')
 
 inquirer
@@ -65,6 +66,7 @@ inquirer
             progress.update(bar, master)
 
             if (bar.value === answers.lines) {
+                await updateStats(db)
                 await complete(db)
                 await dbAccess.close(db)
             }

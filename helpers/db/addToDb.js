@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs')
 
 const addToDb = async (db, master) => {
     await db.run(
@@ -11,9 +11,9 @@ const addToDb = async (db, master) => {
             '${JSON.stringify(master.videos)}', 
             ${master.id});`,
         (err, data) => {
-            if (err) fs.appendFileSync('./errorCatcher.xml', `${master.id} - ${err}\n`); // Print ID of release that threw to errorCatcher.xml for checking.
+            if (err) fs.appendFileSync('./errorCatcher.xml', `${master.id} - ${err}\n`) // Print ID of release that threw to errorCatcher.xml for checking.
         }
-    );
-};
+    )
+}
 
-module.exports = addToDb;
+module.exports = addToDb
